@@ -9,3 +9,5 @@ python3 train_and_chat.py from the terminal
 # Architecture
 
 ![image](https://github.com/user-attachments/assets/3398652f-20b1-4cda-9c4c-e41f1d6c8134)
+
+****Feel free to detect/improve the code/model***
