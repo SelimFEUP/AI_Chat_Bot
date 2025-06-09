@@ -27,7 +27,7 @@ def main():
     
     print("Training model...")
     early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=5, mode='min')
-    mc = tf.keras.callbacks.ModelCheckpoint('ai_chat_platform/model.keras', monitor='val_loss', verbose=1, save_best_only=True, mode='min')
+    mc = tf.keras.callbacks.ModelCheckpoint('model.keras', monitor='val_loss', verbose=1, save_best_only=True, mode='min')
     
     model.fit(
         train_data,
@@ -38,7 +38,7 @@ def main():
     )
 
 
-    model.load_weights('ai_chat_platform/model.keras')
+    model.load_weights('model.keras')
     # Create inference models
     encoder_model, decoder_model = create_inference_model(model)
     
